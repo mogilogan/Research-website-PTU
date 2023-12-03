@@ -60,7 +60,6 @@ const Contact = () => {
 
                 <div class="flex items-center mt-4 text-gray-600 dark:text-gray-400">
                   <BsTelephone size={30} />
-
                   <div class="ml-4 text-md tracking-wide font-semibold w-40">
                     0413-2655281-288
                   </div>

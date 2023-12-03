@@ -20,7 +20,9 @@
   to { transform: scale(1.2); }
 }
 
-
+td[colspan]:not([colspan="1"]) {
+  text-align: center;
+}
 .vertical-center {
         width: 80%;
         height: 600px;

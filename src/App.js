@@ -11,6 +11,7 @@ import Circulars from "./components/Circulars/Circulars";
 import Gallery from "./components/Gallery/Slider";
 import Contact from "./components/Contact/Contact";
 import Downloads from "./components/Downloads/Downloads";
+import Research from "./components/Research/Research";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/publications" element={<Publications />} />
         <Route path="/circulars" element={<Circulars />} />
         <Route path="/downloads" element={<Downloads />} />
+        <Route path="/research" element={<Research />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

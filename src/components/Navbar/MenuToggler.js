@@ -71,7 +71,7 @@ export const NavBarLi = () => {
         transition={{ delay: 0.7, duration: 2 }}
         className="my-4 lg:my-0 border-b-2 lg:border-b-0"
       >
-        <Link to="/">
+        <Link to="/research">
           <a
             className="text-[1.0rem] md:text-[0.8rem] 2xl:text-[1.0rem] px-4 lg:hover:border-b-2"
             href="#"
