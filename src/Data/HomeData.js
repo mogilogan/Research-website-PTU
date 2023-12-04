@@ -1,6 +1,6 @@
-import vicky from "../assests/Heads/vicky.png";
-import guna from "../assests/Heads/guna.png";
-import sudha from "../assests/Heads/sudha.png";
+import vicky from "../assests/Heads/Picture3.png";
+import guna from "../assests/Heads/Picture2.png";
+import sudha from "../assests/Heads/Picture1.png";
 
 export const HomeData = [
   {
@@ -21,19 +21,22 @@ export const HeadsData = [
   {
     id: 1,
     title: "DIRECTOR (ACADEMIC RESEARCH) & QIP COORDINATOR",
-    category: "Dr.K.VIVEKANDANDAN, Professor CSE",
+    name: "Dr.K.VIVEKANDANDAN",
+    prof: "Professor CSE",
     img: vicky,
   },
   {
     id: 2,
     title: "ASSOCIATE DIRECTOR (ACADEMIC RESEARCH)",
-    category: "Dr.R.GUNASUNDARI, Professor ECE",
+    name: "Dr.R.GUNASUNDARI",
+    prof: "Professor ECE",
     img: guna,
   },
   {
     id: 3,
     title: "ADF COORDINATOR",
-    category: "Dr. M. SUDHAKARAN, Professor EEE",
+    name: "Dr. M. SUDHAKARAN",
+    prof: "Professor EEE",
     img: sudha,
   },
 ];

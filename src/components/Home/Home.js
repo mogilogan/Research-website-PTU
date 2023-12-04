@@ -8,13 +8,13 @@ const Home = () => {
   return (
     <HomeProvider>
       <section>
-        <div class=" text-black py-20">
-          <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
+        <div class="pb-20 text-black ">
+          <div class="container mx-auto flex flex-col md:flex-row items-center my-8 md:my-24">
             <div class="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
-              <h1 class="text-3xl md:text-5xl p-2 text-yellow-300 tracking-loose">
+              <h1 class="text-3xl md:text-5xl p-2 text-[#00063d] tracking-loose">
                 Ph.D. & Research
               </h1>
-              <h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">
+              <h2 class="text-3xl md:text-5xl text-gray-400 leading-relaxed md:leading-snug mb-2">
                 Puducherry Technological University
               </h2>
               <p class="text-sm md:text-base text-gray-700 mb-4">

@@ -7,22 +7,33 @@ const Heads = () => {
   const { heads, setHeads } = useContext(HomeContext);
 
   return (
-    <section className="py-5 sm:py-10 mt-5 sm:mt-10">
-      <div className="text-center">
-        <p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
-          Officials
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-        {heads.map((head) => (
-          <Single
-            title={head.title}
-            category={head.category}
-            image={head.img}
-            key={head.id}
-          />
-        ))}
+    <section className="pb-10 md:mb-20 sm:py-10 mt-5 sm:mt-10">
+      <h1 className="sm:text-4xl text-xl font-mono py-2 text-[#a75959]">
+        OFFICIALS
+      </h1>
+      <div class="py-2 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-12 xl:px-32">
+          <div class="mb-16 text-center"></div>
+          <div class="grid gap-12 items-center md:grid-cols-3">
+            {heads.map((head) => (
+              <div class="space-y-4 text-center">
+                <img
+                  class="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64"
+                  src={head.img}
+                  alt="woman"
+                  loading="lazy"
+                  width="640"
+                  height="805"
+                />
+                <div>
+                  <h4 class="text-2xl">{head.name}</h4>
+                  <span class="block text-sm text-gray-500">{head.prof}</span>
+                  <h4 class="text-xl py-2">{head.title}</h4>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
