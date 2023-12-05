@@ -24,7 +24,7 @@ const AnimateCharacters = (props) => {
     },
     visible: {
       y: 0,
-      color: "#6ebeff",
+      color: "#00063d",
       transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.75 },
     },
   };

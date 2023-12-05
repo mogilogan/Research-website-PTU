@@ -3,6 +3,7 @@ import About from "./About";
 
 import { motion } from "framer-motion";
 import Heads from "./Heads";
+import cross1 from "../../assests/cross1.png";
 
 const Home = () => {
   return (
@@ -28,7 +29,7 @@ const Home = () => {
                 Explore Now
               </a>
             </div>
-            <div class="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">
+            <div class="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-4/5  justify-center">
               <div class="h-48 flex flex-wrap content-center">
                 <div>
                   <img

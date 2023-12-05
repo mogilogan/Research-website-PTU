@@ -1,13 +1,12 @@
 import React from "react";
 
 const Row = ({ special }) => {
-  console.log(special.names);
   return (
     <>
       <div class="table-wrp block">
         <table class="w-full">
           <thead className="sticky ">
-            <tr class="text-md font-semibold tracking-wide text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-600">
+            <tr class="text-md font-semibold tracking-wide text-left text-gray-900 font-serif bg-gray-100 uppercase border-b border-gray-600">
               <th class="px-4 py-3">Sl. No. </th>
               <th class="px-4 py-3">name of the Scholar</th>
               <th class="px-4 py-3">Name of the Supervisor</th>
@@ -22,7 +21,7 @@ const Row = ({ special }) => {
               <td colspan="7" class="px-4 py-3 border">
                 <div class="flex items-center text-sm">
                   <div>
-                    <p class="font-bold text-2xl text-[#0239b177]">
+                    <p class="font-bold font-serif text-2xl text-[#0239b177]">
                       List of Ph.D. Scholars Registered with {special.college}{" "}
                       (For Scholars admitted during {special.Admitted})
                     </p>

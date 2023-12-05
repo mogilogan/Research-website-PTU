@@ -797,7 +797,7 @@ export const Chemistry = [
   {
     college: "PUDUCHERRY TECHNOLOGICAL UNIVERSITY",
     Admitted: "2022-23",
-    names: [{}],
+    names: [],
   },
 ];
 export const Mechanical = [

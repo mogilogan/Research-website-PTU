@@ -7,24 +7,24 @@ import Row from "./Row";
 const Table = ({ value, values }) => {
   const { ptueng, ptusci, pkietsci, pkieteng } = useContext(SuperContext);
   return (
-    <section class="container mx-auto p-6 font-mono">
+    <section class="container mx-auto p-6 font-serif">
       <div class="w-full mb-8 overflow-hidden rounded-lg shadow-lg">
         <div class="w-full overflow-x-auto">
           {value === false ? (
             <>
-              <p className="text-center mx-auto font-mono text-2xl">
+              <p className="text-center mx-auto font-serif text-2xl">
                 Department wise list of PTU Research Supervisors with their Area
                 of Specialisation
               </p>
               {values === false ? (
                 <>
-                  <p className="text-center mx-auto py-2 font-mono text-xl">
+                  <p className="text-center mx-auto py-2 font-serif text-xl">
                     Discipline: Engineering/Technology
                   </p>
                 </>
               ) : (
                 <>
-                  <p className="text-center mx-auto py-2 font-mono text-xl">
+                  <p className="text-center mx-auto py-2 font-serif text-xl">
                     Discipline: Science and Humanities
                   </p>
                 </>
@@ -32,19 +32,19 @@ const Table = ({ value, values }) => {
             </>
           ) : (
             <>
-              <p className="text-center mx-auto font-mono text-2xl">
+              <p className="text-center mx-auto font-serif text-2xl">
                 Department wise list of PKIET Research Supervisors with their
                 Designation and Area of Specialisation
               </p>
               {values === false ? (
                 <>
-                  <p className="text-center mx-auto py-2 font-mono text-xl">
+                  <p className="text-center mx-auto py-2 font-serif text-xl">
                     Discipline: Engineering/Technology
                   </p>
                 </>
               ) : (
                 <>
-                  <p className="text-center mx-auto py-2 font-mono text-xl">
+                  <p className="text-center mx-auto py-2 font-serif text-xl">
                     Discipline: Science and Humanities
                   </p>
                 </>

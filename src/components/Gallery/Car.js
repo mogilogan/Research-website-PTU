@@ -6,9 +6,11 @@ const Car = ({ gallery2 }) => {
   return (
     <div>
       <Carousel
-        className="pt-[30px] w-[60%] mx-auto"
+        className="pt-[30px] m-auto w-[80%] md:w-[800px] mx-auto"
         dynamicHeight={true}
+        centerMode
         infiniteLoop
+        interval={1500}
       >
         {gallery2.map((feature, index) => {
           // destructure feature

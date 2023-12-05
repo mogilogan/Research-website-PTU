@@ -91,7 +91,7 @@ export const NavBarLi = () => {
             className="text-[1.0rem] md:text-[0.8rem] 2xl:text-[1.0rem] px-4 lg:hover:border-b-2"
             href="#"
           >
-            Research Publi. & Awards
+            Publications & Awards
           </a>
         </Link>
       </motion.div>

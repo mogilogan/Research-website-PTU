@@ -32,9 +32,15 @@ const Select = () => {
 
   return (
     <div>
-      <div class="flex py-6 justify-center items-center">
+      <div class="flex py-6 justify-center gap-4 items-center">
         <p className="heading1">Select Departments: </p>
-        <select value={name} onChange={(e) => handleChange(e)}>
+
+        <select
+          className="rounded-2xl md:px-2 py-2 border-[4px] border-[#663c3c]"
+          style={{ width: "200px", "-webkit-appearance": "none" }}
+          value={name}
+          onChange={(e) => handleChange(e)}
+        >
           <option name="CSE">CSE</option>
           <option name="CIVIL">CIVIL</option>
           <option name="CHEMICAL">CHEMICAL</option>
