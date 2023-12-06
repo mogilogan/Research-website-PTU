@@ -20,14 +20,14 @@ export const HomeData = [
 export const HeadsData = [
   {
     id: 1,
-    title: "DIRECTOR (ACADEMIC RESEARCH) & QIP COORDINATOR",
+    title: "DIRECTOR (ACADEMIC RESEARCH)\n & QIP COORDINATOR",
     name: "Dr.K.VIVEKANDANDAN",
     prof: "Professor CSE",
     img: vicky,
   },
   {
     id: 2,
-    title: "ASSOCIATE DIRECTOR (ACADEMIC RESEARCH)",
+    title: "ASSOCIATE DIRECTOR\n (ACADEMIC RESEARCH)",
     name: "Dr.R.GUNASUNDARI",
     prof: "Professor ECE",
     img: guna,

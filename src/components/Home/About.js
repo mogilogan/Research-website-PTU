@@ -2,13 +2,13 @@ import homes from "../../assests/home.jpg";
 import { useContext } from "react";
 import HomeContext from "../../context/HomeContext";
 
-import res from "../../assests/res.jpg";
+import res from "../../assests/ptu-logo.png";
 const About = () => {
   const { home } = useContext(HomeContext);
 
   return (
     <div>
-      <h1 className="sm:text-4xl text-xl font-mono py-2 text-[#a75959]">
+      <h1 className="sm:text-4xl text-xl font-sans py-2 text-[#a75959]">
         OFFICE OF DIRECTOR (ACADEMIC RESEARCH){" "}
       </h1>
       <div class="container mx-auto md:px-6">

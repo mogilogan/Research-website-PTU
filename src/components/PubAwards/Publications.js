@@ -162,7 +162,7 @@ export const Publications = () => {
         </div>
         <div className="based" />
       </div>
-      <p>WILL BE UPDATED Soo...</p>
+      <p>WILL BE UPDATED SOON...</p>
     </div>
   );
 };

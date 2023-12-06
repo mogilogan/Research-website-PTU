@@ -3,7 +3,11 @@ import About from "./About";
 
 import { motion } from "framer-motion";
 import Heads from "./Heads";
-import cross1 from "../../assests/cross1.png";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+import { Link } from "react-router-dom";
+import { Gallerys } from "./image-data";
 
 const Home = () => {
   return (
@@ -22,34 +26,34 @@ const Home = () => {
                 In the pursuit of knowledge, there is no finish line. Embrace
                 the journey of discovery.
               </p>
-              <a
-                href="#"
-                class="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
-              >
-                Explore Now
-              </a>
+              <Link to="/phd">
+                <p
+                  href="/phd"
+                  class="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
+                >
+                  Explore Now
+                </p>
+              </Link>
             </div>
-            <div class="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-4/5  justify-center">
-              <div class="h-48 flex flex-wrap content-center">
-                <div>
-                  <img
-                    class="inline-block mt-28 hidden xl:block"
-                    src="https://user-images.githubusercontent.com/54521023/116969935-c13d5b00-acd4-11eb-82b1-5ad2ff10fb76.png"
-                  />
-                </div>
-                <div>
-                  <img
-                    class="inline-block mt-24 md:mt-0 p-8 md:p-0"
-                    src="https://user-images.githubusercontent.com/54521023/116969931-bedb0100-acd4-11eb-99a9-ff5e0ee9f31f.png"
-                  />
-                </div>
-                <div>
-                  <img
-                    class="inline-block mt-28 hidden lg:block"
-                    src="https://user-images.githubusercontent.com/54521023/116969939-c1d5f180-acd4-11eb-8ad4-9ab9143bdb50.png"
-                  />
-                </div>
-              </div>
+            <div class="p-8 mt-12 mb-6 w-[80%] md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-4/5  justify-center">
+              <Carousel
+                className="pt-[30px] m-auto w-[80%] md:w-[800px] mx-auto"
+                dynamicHeight={true}
+                infiniteLoop
+                interval={1500}
+                showArrows={true}
+                swipeable={true}
+                showIndicators={false}
+              >
+                {Gallerys.map((feature, index) =>
+                  // destructure feature
+                  feature.photo.map((single, key) => (
+                    <div>
+                      <img src={single} height="300px" width="200px" />
+                    </div>
+                  ))
+                )}
+              </Carousel>
             </div>
           </div>
         </div>

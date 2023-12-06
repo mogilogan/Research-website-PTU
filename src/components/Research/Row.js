@@ -1,6 +1,10 @@
 import React from "react";
 
 const Row = ({ special }) => {
+  const data = special?.names;
+  const reverse = [...data].reverse();
+
+  console.log(reverse);
   return (
     <>
       <div class="table-wrp block">
@@ -48,8 +52,8 @@ const Row = ({ special }) => {
               </>
             ) : (
               <>
-                {special.names.map((value, index) => (
-                  <tr key={index} class="text-gray-700">
+                {reverse.map((value, index) => (
+                  <tr key={index} class="text-gray-700 ">
                     <td class="px-4 py-3 border">
                       <div class="flex items-center text-sm">
                         <div>

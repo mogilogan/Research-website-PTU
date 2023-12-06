@@ -35,10 +35,10 @@ const Navigation = () => {
                 <img className="" src={logo} width={40} />
               </div>
               <h1 className="hidden px-10 md:block text-[2rem]">
-                Office of Director (Academic Research)
+                Office of the Director(Academic Research)
               </h1>{" "}
               <span className="block  text-[1.5rem] md:hidden">
-                Off. of Director
+                Off. of the Director
                 <br />
                 (Academic Research)
               </span>

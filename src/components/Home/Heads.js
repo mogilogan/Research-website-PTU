@@ -8,7 +8,7 @@ const Heads = () => {
 
   return (
     <section className="pb-10 md:mb-20 sm:py-10 mt-5 sm:mt-10">
-      <h1 className="sm:text-4xl text-xl font-mono py-2 text-[#a75959]">
+      <h1 className="sm:text-4xl text-xl font-sans py-2 text-[#a75959]">
         OFFICIALS
       </h1>
       <div class="py-2 bg-gray-50">
@@ -28,7 +28,15 @@ const Heads = () => {
                 <div>
                   <h4 class="text-2xl">{head.name}</h4>
                   <span class="block text-sm text-gray-500">{head.prof}</span>
-                  <h4 class="text-xl py-2">{head.title}</h4>
+                  <h4 class="text-xl py-2">
+                    {" "}
+                    {head.title.split("\n").map((line, index) => (
+                      <p key={index}>
+                        {line}
+                        <br />
+                      </p>
+                    ))}
+                  </h4>
                 </div>
               </div>
             ))}
