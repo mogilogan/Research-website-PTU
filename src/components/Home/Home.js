@@ -23,8 +23,8 @@ const Home = () => {
                 Puducherry Technological University
               </h2>
               <p class="text-sm md:text-base text-gray-700 mb-4">
-                In the pursuit of knowledge, there is no finish line. Embrace
-                the journey of discovery.
+                The Ph.D. and Academic Research at PTU is administered by the
+                Office of the Academic Research
               </p>
               <Link to="/phd">
                 <p

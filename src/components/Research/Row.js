@@ -4,7 +4,6 @@ const Row = ({ special }) => {
   const data = special?.names;
   const reverse = [...data].reverse();
 
-  console.log(reverse);
   return (
     <>
       <div class="table-wrp block">

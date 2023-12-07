@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import CircleLoader from "./CircleLoader";
 import {
   IPiece,
   JPiece,

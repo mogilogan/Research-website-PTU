@@ -1,10 +1,9 @@
 import { useContext } from "react";
-import { FiSearch } from "react-icons/fi";
-import Single from "./Single";
+
 import HomeContext from "../../context/HomeContext";
 
 const Heads = () => {
-  const { heads, setHeads } = useContext(HomeContext);
+  const { heads } = useContext(HomeContext);
 
   return (
     <section className="pb-10 md:mb-20 sm:py-10 mt-5 sm:mt-10">

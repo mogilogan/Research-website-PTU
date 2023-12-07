@@ -6,14 +6,6 @@ import { motion } from "framer-motion";
 import Table from "./Table";
 import { useState } from "react";
 
-const container = {
-  visible: {
-    transition: {
-      staggerChildren: 0.025,
-    },
-  },
-};
-
 const spring = {
   type: "spring",
   stiffness: 700,

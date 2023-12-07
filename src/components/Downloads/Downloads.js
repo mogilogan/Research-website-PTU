@@ -1,6 +1,4 @@
-import React, { useContext, useState } from "react";
-
-import one from "../../assests/downloads/one.doc";
+import React from "react";
 
 import { DownloadProvider } from "../../context/DownloadContext";
 

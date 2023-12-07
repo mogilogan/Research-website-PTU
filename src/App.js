@@ -12,7 +12,6 @@ import Gallery from "./components/Gallery/Slider";
 import Contact from "./components/Contact/Contact";
 import Downloads from "./components/Downloads/Downloads";
 import Research from "./components/Research/Research";
-import Footer from "./components/Footer";
 
 function App() {
   return (
